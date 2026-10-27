@@ -3,277 +3,269 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catálogo Turístico GDL-TJ</title>
+  <title>Conóceme GDL-TJ</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
 <header class="site-header">
-  <div class="brand">Catálogo Turístico GDL-TJ</div>
+  <div class="brand">GDL-TJ</div>
+
   <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#lugares">Lugares</a>
     <a href="#mapa">Mapa</a>
-    <a href="#categorias">Categorías</a>
     <a href="#favoritos">Favoritos</a>
+    <a href="#consejos">Consejos</a>
   </nav>
 </header>
 
-<main class="container">
-  <section class="intro">
-    <h1>Propuesta UX/UI - Catálogo Turístico GDL-TJ</h1>
-    <p>Prototipo estático para mostrar tres interfaces principales del sistema: mapa de lugares turísticos, categorías y filtros, y favoritos con planificación de visita.</p>
-  </section>
+<main>
 
-  <section id="mapa" class="screen">
-    <div class="screen-title">
-      <span>1</span>
-      <div>
-        <h2>Mapa de lugares turísticos</h2>
-        <p>Permite visualizar puntos turísticos de Guadalajara y Tijuana.</p>
+  <section id="inicio" class="hero">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <p class="eyebrow">Catálogo turístico</p>
+
+      <h1>Conóceme GDL-TJ</h1>
+
+      <p class="hero-text">
+        Dos ciudades, un sinfín de experiencias.
+        Descubre cultura, gastronomía, historia y lugares únicos
+        de Guadalajara y Tijuana.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#lugares" class="hero-button gdl">
+          Explorar Guadalajara →
+        </a>
+
+        <a href="#lugares" class="hero-button tj">
+          Explorar Tijuana →
+        </a>
       </div>
     </div>
 
-    <div class="app-card">
-      <div class="app-topbar">
-        <strong>Catálogo Turístico GDL-TJ</strong>
-        <input type="text" placeholder="Buscar...">
-        <div class="icons">● ☰</div>
+    <div class="home-features">
+
+      <div class="feature">
+        <div class="feature-icon">🗺</div>
+        <div>
+          <h3>Lugares turísticos</h3>
+          <p>Mapas y rutas</p>
+        </div>
       </div>
 
-      <div class="city-tabs">
-        <button class="active">Guadalajara</button>
-        <button>Tijuana</button>
+      <div class="feature">
+        <div class="feature-icon">🍴</div>
+        <div>
+          <h3>Gastronomía</h3>
+          <p>Sabores únicos</p>
+        </div>
       </div>
 
-      <div class="map-area">
-        <span class="pin pin-1">●</span>
-        <span class="pin pin-2">●</span>
-        <span class="pin pin-3">●</span>
-        <span class="pin pin-4">●</span>
-
-        <article class="map-popup">
-          <div class="thumb small"></div>
-          <div>
-            <h3>Hospicio Cabañas</h3>
-            <p>Guadalajara</p>
-            <span class="tag">Cultura</span>
-            <a href="#">Ver detalles</a>
-          </div>
-        </article>
+      <div class="feature">
+        <div class="feature-icon">📷</div>
+        <div>
+          <h3>Cultura e historia</h3>
+          <p>Patrimonio y tradición</p>
+        </div>
       </div>
 
-      <h3 class="subheading">Lugares cercanos</h3>
-      <div class="cards-grid three">
-        <article class="place-card">
-          <div class="thumb"></div>
+      <div class="feature">
+        <div class="feature-icon">◆</div>
+        <div>
+          <h3>Viaja seguro</h3>
+          <p>Recomendaciones útiles</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="lugares" class="section">
+    <div class="section-heading">
+      <p class="eyebrow dark">Explora</p>
+      <h2>Lugares recomendados</h2>
+      <p>
+        Una selección inicial de sitios turísticos de Guadalajara y Tijuana.
+      </p>
+    </div>
+
+    <div class="cards-grid">
+
+      <article class="place-card">
+        <div class="place-image image-one"></div>
+        <div class="place-body">
+          <span class="tag">Cultura</span>
+          <h3>Hospicio Cabañas</h3>
+          <p>Guadalajara</p>
+          <a href="#">Ver detalles</a>
+        </div>
+      </article>
+
+      <article class="place-card">
+        <div class="place-image image-two"></div>
+        <div class="place-body">
+          <span class="tag">Historia</span>
           <h3>Catedral de Guadalajara</h3>
           <p>Guadalajara</p>
-          <span class="tag">Historia</span>
-        </article>
-        <article class="place-card">
-          <div class="thumb"></div>
-          <h3>Mercado San Juan de Dios</h3>
-          <p>Guadalajara</p>
-          <span class="tag">Gastronomía</span>
-        </article>
-        <article class="place-card">
-          <div class="thumb"></div>
-          <h3>Parque Agua Azul</h3>
-          <p>Guadalajara</p>
+          <a href="#">Ver detalles</a>
+        </div>
+      </article>
+
+      <article class="place-card">
+        <div class="place-image image-three"></div>
+        <div class="place-body">
+          <span class="tag">Entretenimiento</span>
+          <h3>Avenida Revolución</h3>
+          <p>Tijuana</p>
+          <a href="#">Ver detalles</a>
+        </div>
+      </article>
+
+      <article class="place-card">
+        <div class="place-image image-four"></div>
+        <div class="place-body">
           <span class="tag">Naturaleza</span>
-        </article>
-      </div>
+          <h3>Playas de Tijuana</h3>
+          <p>Tijuana</p>
+          <a href="#">Ver detalles</a>
+        </div>
+      </article>
+
     </div>
   </section>
 
-  <section id="categorias" class="screen">
-    <div class="screen-title">
-      <span>2</span>
-      <div>
-        <h2>Categorías y filtros</h2>
-        <p>Permite buscar y filtrar lugares de acuerdo con los intereses del usuario.</p>
-      </div>
+  <section id="mapa" class="section alt">
+    <div class="section-heading">
+      <p class="eyebrow dark">Ubicación</p>
+      <h2>Mapa turístico</h2>
+      <p>
+        Visualiza los principales puntos de interés y organiza mejor tu recorrido.
+      </p>
     </div>
 
-    <div class="app-card">
-      <div class="app-topbar">
-        <strong>Catálogo Turístico GDL-TJ</strong>
-        <input type="text" placeholder="Buscar...">
-        <div class="icons">● ☰</div>
-      </div>
+    <div class="map-layout">
 
-      <div class="content-block">
-        <h2>¿Qué quieres visitar?</h2>
-        <div class="search-row">
-          <input type="text" placeholder="Buscar lugares, actividades...">
-          <button>Buscar</button>
-        </div>
-
-        <div class="filters-row">
-          <label>Ciudad
-            <select>
-              <option>Guadalajara</option>
-              <option>Tijuana</option>
-            </select>
-          </label>
-          <label>Ordenar por
-            <select>
-              <option>Más relevantes</option>
-              <option>Nombre</option>
-              <option>Categoría</option>
-            </select>
-          </label>
-        </div>
-
+      <aside class="map-sidebar">
         <h3>Categorías</h3>
-        <div class="chips">
-          <button class="active">Todas</button>
-          <button>Cultura</button>
-          <button>Historia</button>
-          <button>Gastronomía</button>
-          <button>Naturaleza</button>
-          <button>Entretenimiento</button>
-          <button>Compras</button>
-        </div>
 
-        <div class="results-head">
-          <h3>Resultados</h3>
-          <button class="ghost">Limpiar filtros</button>
-        </div>
+        <button class="filter active">Todas</button>
+        <button class="filter">Cultura</button>
+        <button class="filter">Historia</button>
+        <button class="filter">Gastronomía</button>
+        <button class="filter">Naturaleza</button>
+        <button class="filter">Entretenimiento</button>
+        <button class="filter">Compras</button>
+      </aside>
 
-        <div class="cards-grid two">
-          <article class="place-card">
-            <div class="thumb"></div>
-            <h3>Hospicio Cabañas</h3>
-            <p>Guadalajara</p>
-            <span class="tag">Cultura</span>
-          </article>
-          <article class="place-card">
-            <div class="thumb"></div>
-            <h3>Mercado San Juan de Dios</h3>
-            <p>Guadalajara</p>
-            <span class="tag">Gastronomía</span>
-          </article>
-          <article class="place-card">
-            <div class="thumb"></div>
-            <h3>Parque Agua Azul</h3>
-            <p>Guadalajara</p>
-            <span class="tag">Naturaleza</span>
-          </article>
-          <article class="place-card">
-            <div class="thumb"></div>
-            <h3>Andador Chapultepec</h3>
-            <p>Guadalajara</p>
-            <span class="tag">Entretenimiento</span>
-          </article>
+      <div class="map-box">
+        <span class="pin pin-a">●</span>
+        <span class="pin pin-b">●</span>
+        <span class="pin pin-c">●</span>
+        <span class="pin pin-d">●</span>
+
+        <div class="map-popup">
+          <strong>Catedral de Guadalajara</strong>
+          <span>Historia</span>
+          <a href="#">Ver detalles →</a>
         </div>
       </div>
+
     </div>
   </section>
 
-  <section id="favoritos" class="screen">
-    <div class="screen-title">
-      <span>3</span>
+  <section id="favoritos" class="section">
+    <div class="section-heading">
+      <p class="eyebrow dark">Planea</p>
+      <h2>Mis lugares favoritos</h2>
+      <p>
+        Guarda los sitios que más te interesan para organizar tu próxima visita.
+      </p>
+    </div>
+
+    <div class="favorite-grid">
+
+      <article class="favorite-card">
+        <div class="favorite-photo image-two"></div>
+        <div>
+          <span class="tag">Historia</span>
+          <h3>Catedral de Guadalajara</h3>
+          <p>Guadalajara</p>
+        </div>
+        <span class="heart">♥</span>
+      </article>
+
+      <article class="favorite-card">
+        <div class="favorite-photo image-three"></div>
+        <div>
+          <span class="tag">Entretenimiento</span>
+          <h3>Avenida Revolución</h3>
+          <p>Tijuana</p>
+        </div>
+        <span class="heart">♥</span>
+      </article>
+
+    </div>
+
+    <div class="plan-box">
       <div>
-        <h2>Favoritos y planificación de visita</h2>
-        <p>Permite guardar lugares y organizarlos para una visita posterior.</p>
-      </div>
-    </div>
-
-    <div class="app-card">
-      <div class="app-topbar">
-        <strong>Catálogo Turístico GDL-TJ</strong>
-        <input type="text" placeholder="Buscar...">
-        <div class="icons">● ☰</div>
+        <h3>Planifica tu visita</h3>
+        <p>
+          Organiza tus lugares favoritos por ciudad y crea un itinerario sencillo.
+        </p>
       </div>
 
-      <div class="content-block">
-        <h2>Mis lugares favoritos</h2>
-        <p>Aquí puedes guardar los lugares que te interesan para consultarlos después.</p>
-
-        <div class="favorites-list">
-          <article class="favorite-item">
-            <div class="thumb favorite-thumb"></div>
-            <div class="favorite-info">
-              <h3>Hospicio Cabañas</h3>
-              <p>Guadalajara</p>
-              <span class="tag">Cultura</span>
-              <div class="action-row">
-                <a href="#">Ver detalles</a>
-                <a class="secondary" href="#">Ver en mapa</a>
-              </div>
-            </div>
-            <div class="favorite-mark">♥</div>
-          </article>
-
-          <article class="favorite-item">
-            <div class="thumb favorite-thumb"></div>
-            <div class="favorite-info">
-              <h3>Catedral de Guadalajara</h3>
-              <p>Guadalajara</p>
-              <span class="tag">Historia</span>
-              <div class="action-row">
-                <a href="#">Ver detalles</a>
-                <a class="secondary" href="#">Ver en mapa</a>
-              </div>
-            </div>
-            <div class="favorite-mark">♥</div>
-          </article>
-
-          <article class="favorite-item">
-            <div class="thumb favorite-thumb"></div>
-            <div class="favorite-info">
-              <h3>Avenida Revolución</h3>
-              <p>Tijuana</p>
-              <span class="tag">Entretenimiento</span>
-              <div class="action-row">
-                <a href="#">Ver detalles</a>
-                <a class="secondary" href="#">Ver en mapa</a>
-              </div>
-            </div>
-            <div class="favorite-mark">♥</div>
-          </article>
-        </div>
-
-        <div class="plan-box">
-          <h3>Planifica tu visita</h3>
-          <p>Puedes organizar tus lugares favoritos por día y ciudad.</p>
-          <button>Crear itinerario</button>
-        </div>
-
-        <div class="tips-box">
-          <h3>Recomendaciones para tu visita</h3>
-          <ul>
-            <li>Consulta horarios de los lugares.</li>
-            <li>Mantén tus pertenencias personales protegidas.</li>
-            <li>Revisa el clima antes de tu visita.</li>
-            <li>Respeta las indicaciones de cada sitio.</li>
-            <li>Utiliza transporte seguro.</li>
-          </ul>
-        </div>
-      </div>
+      <a href="#" class="plan-button">Crear itinerario</a>
     </div>
   </section>
 
-  <section class="architecture">
-    <h2>Estructura por capas del sistema</h2>
-    <div class="layer presentation">
-      <h3>Capa de presentación (Vista)</h3>
-      <p>WordPress, tema y plantillas, HTML, CSS, JavaScript, páginas, menús, formularios e imágenes.</p>
+  <section id="consejos" class="section tips-section">
+    <div class="section-heading">
+      <p class="eyebrow dark">Seguridad</p>
+      <h2>Consejos para tu visita</h2>
     </div>
-    <div class="arrow">↓</div>
-    <div class="layer business">
-      <h3>Capa de negocio (Lógica)</h3>
-      <p>WordPress y PHP, gestión de contenidos, clasificación por ciudades y categorías, procesamiento de solicitudes y plugins.</p>
-    </div>
-    <div class="arrow">↓</div>
-    <div class="layer data">
-      <h3>Capa de datos</h3>
-      <p>MySQL o MariaDB para almacenar lugares turísticos, ciudades, categorías, descripciones y recomendaciones.</p>
+
+    <div class="tips-grid">
+
+      <article>
+        <h3>Consulta horarios</h3>
+        <p>
+          Verifica los horarios de acceso antes de trasladarte.
+        </p>
+      </article>
+
+      <article>
+        <h3>Protege tus pertenencias</h3>
+        <p>
+          Mantén objetos de valor en lugares seguros durante tu recorrido.
+        </p>
+      </article>
+
+      <article>
+        <h3>Revisa el clima</h3>
+        <p>
+          Consulta las condiciones meteorológicas antes de salir.
+        </p>
+      </article>
+
+      <article>
+        <h3>Usa transporte seguro</h3>
+        <p>
+          Prioriza medios de transporte identificados y confiables.
+        </p>
+      </article>
+
     </div>
   </section>
+
 </main>
 
 <footer class="site-footer">
-  Proyecto V · XQ09 · Catálogo Turístico GDL-TJ
+  <p>Proyecto V · XQ09 · Catálogo Turístico GDL-TJ</p>
 </footer>
+
 </body>
 </html>
