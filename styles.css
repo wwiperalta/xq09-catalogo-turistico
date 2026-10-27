@@ -76,8 +76,8 @@ body {
   padding: 120px 8% 170px;
 
   background:
-    url("https://commons.wikimedia.org/wiki/Special:Redirect/file/Catedral_de_Guadalajara,_Jalisco,_2025.jpg")
-    center 42% / cover no-repeat;
+    url("images/guadalajara-hero.jpg")
+    center 45% / cover no-repeat;
 }
 
 .hero-overlay {
